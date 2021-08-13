@@ -1,0 +1,205 @@
+|ShiftLight
+LEDlight <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+RPM1stBit => RpmEquations:inst0.RPMFirstBit
+RPM2ndBit => RpmEquations:inst0.RPMSecondBit
+RPM3rdBit => RpmEquations:inst0.RPMThirdBit
+RPM4thBit => RpmEquations:inst0.RPMFourthBit
+RPMsetter => RPMSetter:inst.Set
+CLK => RPMSetter:inst.CLK
+CLK => inst2.IN1
+Reset => RPMSetter:inst.Reset
+Bit1 <= RPMSetter:inst.FirstBit
+Bit2 <= RPMSetter:inst.SecondBit
+Bit3 <= RPMSetter:inst.ThirdBit
+Bit4 <= RPMSetter:inst.FourthBit
+
+
+|ShiftLight|EquationsToLight:inst1
+LightOutput <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+SecondMemBit => inst22.IN0
+SecondMemBit => inst18.IN0
+SecondMemBit => inst17.IN0
+SecondMemBit => inst19.IN0
+SecondMemBit => inst20.IN0
+SecondMemBit => inst10.IN0
+SecondMemBit => inst9.IN0
+SecondMemBit => inst11.IN0
+SecondMemBit => inst12.IN0
+FirstMemBit => inst23.IN0
+FirstMemBit => inst13.IN1
+FirstMemBit => inst15.IN1
+FirstMemBit => inst14.IN1
+FirstMemBit => inst16.IN1
+FirstMemBit => inst18.IN1
+FirstMemBit => inst17.IN1
+FirstMemBit => inst19.IN1
+FirstMemBit => inst20.IN1
+8kRPM => inst13.IN2
+FourthMemBit => inst24.IN0
+FourthMemBit => inst14.IN3
+FourthMemBit => inst16.IN3
+FourthMemBit => inst18.IN3
+FourthMemBit => inst20.IN3
+FourthMemBit => inst6.IN3
+FourthMemBit => inst8.IN3
+FourthMemBit => inst10.IN3
+FourthMemBit => inst12.IN3
+ThirdMemBit => inst21.IN0
+ThirdMemBit => inst15.IN4
+ThirdMemBit => inst16.IN4
+ThirdMemBit => inst19.IN4
+ThirdMemBit => inst20.IN4
+ThirdMemBit => inst7.IN4
+ThirdMemBit => inst8.IN4
+ThirdMemBit => inst11.IN4
+ThirdMemBit => inst12.IN4
+10kRPM => inst15.IN2
+9kRPM => inst14.IN2
+11kRPM => inst16.IN2
+13kRPM => inst18.IN2
+12kRPM => inst17.IN2
+14kRPM => inst19.IN2
+15kRPM => inst20.IN2
+0kRPM => inst5.IN2
+2kRPM => inst7.IN2
+1kRPM => inst6.IN2
+3kRPM => inst8.IN2
+5kRPM => inst10.IN2
+4kRPM => inst9.IN2
+6kRPM => inst11.IN2
+7kRPM => inst12.IN2
+
+
+|ShiftLight|RpmEquations:inst0
+0KrpmLight <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+RPMFirstBit => inst6.IN0
+RPMFirstBit => insta19.IN0
+RPMFirstBit => inst.IN0
+RPMFirstBit => 8KrpmLight.DATAIN
+RPMFirstBit => inst1.IN0
+RPMFirstBit => inst2.IN2
+RPMFirstBit => inst3.IN2
+RPMFirstBit => inst5.IN1
+RPMFirstBit => inst7.IN0
+RPMFirstBit => inst10.IN1
+RPMFirstBit => inst12.IN1
+RPMFirstBit => inst26.IN0
+RPMFirstBit => inst30.IN0
+RPMFirstBit => inst34.IN0
+RPMFirstBit => inst35.IN0
+RPMFirstBit => inst41.IN0
+RPMFirstBit => inst40.IN0
+RPMThirdBit => inst17.IN0
+RPMThirdBit => insta19.IN1
+RPMThirdBit => inst21.IN1
+RPMThirdBit => inst25.IN0
+RPMThirdBit => inst1.IN1
+RPMThirdBit => inst2.IN1
+RPMThirdBit => inst4.IN0
+RPMThirdBit => inst9.IN1
+RPMThirdBit => inst11.IN1
+RPMThirdBit => inst13.IN1
+RPMThirdBit => inst27.IN1
+RPMThirdBit => inst32.IN1
+RPMThirdBit => inst37.IN1
+RPMThirdBit => inst39.IN0
+RPMThirdBit => inst41.IN2
+RPMThirdBit => inst40.IN2
+RPMFourthBit => inst18.IN0
+RPMFourthBit => insta19.IN2
+RPMFourthBit => inst22.IN2
+RPMFourthBit => inst1.IN2
+RPMFourthBit => inst4.IN1
+RPMFourthBit => inst8.IN1
+RPMFourthBit => inst13.IN2
+RPMFourthBit => inst32.IN2
+RPMFourthBit => inst38.IN2
+RPMFourthBit => inst41.IN3
+RPMSecondBit => inst16.IN0
+RPMSecondBit => insta19.IN3
+RPMSecondBit => inst23.IN0
+RPMSecondBit => inst24.IN0
+RPMSecondBit => inst20.IN2
+RPMSecondBit => inst1.IN3
+RPMSecondBit => inst2.IN0
+RPMSecondBit => inst3.IN0
+RPMSecondBit => inst5.IN0
+RPMSecondBit => inst9.IN0
+RPMSecondBit => inst8.IN0
+RPMSecondBit => inst11.IN0
+RPMSecondBit => inst13.IN0
+RPMSecondBit => inst29.IN0
+RPMSecondBit => inst28.IN1
+RPMSecondBit => inst33.IN0
+RPMSecondBit => inst31.IN1
+RPMSecondBit => inst34.IN1
+RPMSecondBit => inst37.IN0
+RPMSecondBit => inst38.IN0
+RPMSecondBit => inst41.IN1
+RPMSecondBit => inst40.IN1
+9KrpmLight <= inst.DB_MAX_OUTPUT_PORT_TYPE
+8KrpmLight <= RPMFirstBit.DB_MAX_OUTPUT_PORT_TYPE
+1KrpmLight <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2KrpmLight <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3KrpmLight <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4KrpmLight <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+5KrpmLight <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+6KrpmLight <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+7KrpmLight <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+10KrpmLight <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+11KrpmLight <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+12KrpmLight <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+13KrpmLight <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+15KrpmLight <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+14KrpmLight <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ShiftLight|RPMSetter:inst
+FourthBit <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst35.IN0
+CLK => inst17.CLK
+CLK => inst21.CLK
+CLK => inst22.CLK
+CLK => inst23.CLK
+Set => HalfAdder:inst.B
+ThirdBit <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+SecondBit <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+FirstBit <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ShiftLight|RPMSetter:inst|HalfAdder:inst
+CarryOut <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ShiftLight|RPMSetter:inst|HalfAdder:inst5
+CarryOut <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ShiftLight|RPMSetter:inst|HalfAdder:inst6
+CarryOut <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ShiftLight|RPMSetter:inst|HalfAdder:inst7
+CarryOut <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst2.IN1
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

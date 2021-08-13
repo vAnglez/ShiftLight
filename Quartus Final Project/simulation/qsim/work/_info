@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\angel\Google Drive\UNLV\Classes\UNLV S2 Summer\CPE 100L\Final Project\simulation\qsim
+vShiftLight
+Z1 Il`LM`V[>cCbH:KaEd:zDd3
+Z2 VCn2Xd_711BYnoYEAnH`Ab0
+Z3 dC:\Users\angel\Google Drive\UNLV\Classes\UNLV S2 Summer\CPE 100L\Final Project - Everything\Final Project\simulation\qsim
+Z4 w1628748634
+Z5 8ShiftLight.vo
+Z6 FShiftLight.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|ShiftLight.vo|
+Z9 o-work work -O0
+Z10 n@shift@light
+!i10b 1
+Z11 !s100 l5<h?o_WQnTK7B[DR63g>2
+!s85 0
+Z12 !s108 1628748635.654000
+Z13 !s107 ShiftLight.vo|
+!s101 -O0
+vShiftLight_vlg_check_tst
+!i10b 1
+Z14 !s100 iBQ`5]`Ve;[o[Bc8^UZ793
+Z15 IaYS7Pk2Q<bP::UmH:4X503
+Z16 V6<lE=29N`;55a_O<2dl1:0
+R3
+R4
+Z17 8ShiftLight.vt
+Z18 FShiftLight.vt
+L0 69
+R7
+r1
+!s85 0
+31
+Z19 !s108 1628748635.717000
+Z20 !s107 ShiftLight.vt|
+Z21 !s90 -work|work|ShiftLight.vt|
+!s101 -O0
+R9
+Z22 n@shift@light_vlg_check_tst
+vShiftLight_vlg_sample_tst
+!i10b 1
+Z23 !s100 3aXKH>Y1KRkj;96jD1RSD1
+Z24 IT;fg>MWY07?8D:PMgmDdf0
+Z25 V6_5IDdTWA`dmln`lh20DX2
+R3
+R4
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z26 n@shift@light_vlg_sample_tst
+vShiftLight_vlg_vec_tst
+!i10b 1
+Z27 !s100 E=o:NPXcL`AP>KEcT25IM1
+Z28 IA8D2`McFE`G^mWRKH<E;A3
+Z29 V56YAGlTa7o31eYKO]m8P<0
+R3
+R4
+R17
+R18
+Z30 L0 272
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z31 n@shift@light_vlg_vec_tst
