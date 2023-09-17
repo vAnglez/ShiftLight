@@ -5,4 +5,4 @@ The circuit found here is for a shift light which is a light typically located b
 
 The motive behind making this device was to create something that I found interest in which is racing and from there I thought of my current build(Mazda Protege). I was thinking of buying a shift light for my own car and as soon as I realized I needed to make a final project for a class (CPE 100L), I realized it would be a pretty good idea to make this shift light on my own in order to later use it on my own car to allow it to be modified in any shape or form that I want as I would plan to combine this circuit with the car’s ECU(Electronic Control Unit aka Car Computer).
 
-For more details check out the "Final Project Lab Report - Shift Light.pdf" file, thansk for visiting!
+For more details check out the "Final Project Lab Report - Shift Light.pdf" file, thanks for visiting!
